@@ -77,7 +77,18 @@ table tr:hover {
   background-color: #ffdede;
 }
 
-button {
+.carta {
+  margin-bottom: 5px;
+  border: 2px solid #ffbbbba4;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.carta:hover {
+  background-color: #ffdede;
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+form > button {
   display: flexbox;
   padding: 10px 50px;
   font-size: 16px;
@@ -90,7 +101,7 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+form > button:hover {
   background-color: #ffdede;
   border: 2px solid hsl(0, 100%, 74%);
   color: #000;
@@ -98,8 +109,9 @@ button:hover {
 
 input {
   display: flex;
-  width: 50%;
+  width: 200px;
   padding: 10px;
+  border: 2px solid #ffdede;
   margin-bottom: 10px;
 }
 
