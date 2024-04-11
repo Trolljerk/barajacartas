@@ -38,14 +38,21 @@ img {
   max-width: 100px;
 }
 
-table {
-  border-collapse: collapse;
-  max-height: 210px;
-  margin-bottom: 20px;
+#portada {
+  display: flex;
+  justify-content: center;
 }
 
-.col1 {
-  width: 20%;
+#portada > img {
+  margin: 15px;
+  max-width: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+  max-height: 210px;
+  margin-bottom: 20px;
 }
 
 table th,
