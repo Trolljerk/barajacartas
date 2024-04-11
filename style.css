@@ -3,30 +3,45 @@
   padding: 0;
   font-family: "Segoe UI";
 }
+
+body,
+html {
+  height: 100%;
+  background: linear-gradient(
+    75deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(200, 200, 200, 1) 100%
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .contenedor {
   display: flex;
   justify-content: center;
 }
 
 .contenedor-cartas {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
+}
+
+.contenedor-tabla {
+  width: 30%;
 }
 
 img {
   height: fit-content;
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 table {
-  display: block;
   border-collapse: collapse;
-  margin: 20px 0;
-  width: 100%;
   max-height: 210px;
-  overflow-y: auto;
+  margin-bottom: 20px;
 }
 
 .col1 {
@@ -47,6 +62,10 @@ table tr:nth-child(even) {
   background-color: #eeeeee;
 }
 
+table tr:nth-child(odd) {
+  background-color: #fefefefe;
+}
+
 table tr:hover {
   background-color: #ffdede;
 }
@@ -58,20 +77,25 @@ button {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #3498db;
-  color: #3498db;
-  background-color: #fff;
+  border: 2px solid #ffbbbb;
+  color: #000;
+  background-color: hsl(0, 100%, 74%);
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #ffdede;
+  border: 2px solid hsl(0, 100%, 74%);
+  color: #000;
 }
 
 input {
   display: flex;
-  width: 88%;
+  width: 50%;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+input:hover {
+  border: 2px solid hsl(0, 100%, 74%);
 }
