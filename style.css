@@ -1,71 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
 }
-
 .contenedor {
-    display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor-cartas {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 img {
-    height: auto;
-    width: 100%;
-    max-width: 120px;
+  height: fit-content;
+  width: 100%;
+  max-width: 120px;
 }
 
 table {
-    display: block;
-    font-family: Arial, sans-serif;
-    border-collapse: collapse;
-    margin: 20px 0;
-    width: 100%;
-    max-height: 190px;
-    overflow-y: auto;
+  display: block;
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+  max-height: 210px;
+  overflow-y: auto;
 }
 
 .col1 {
-    width: 20%;
+  width: 20%;
 }
 
 table th,
 table td {
-    padding: 10px;
-    text-align: left;
+  padding: 10px;
+  text-align: left;
 }
 
 table th {
-    background-color: hsl(0, 100%, 74%);
+  background-color: hsl(0, 100%, 74%);
 }
 
 table tr:nth-child(even) {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 table tr:hover {
-    background-color: #ffdede;
+  background-color: #ffdede;
 }
 
 button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #3498db;
-    color: #3498db;
-    background-color: #fff;
-    border-radius: 5px;
+  display: flexbox;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  color: #3498db;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #3498db;
-    color: #fff;
+  background-color: #3498db;
+  color: #fff;
+}
+
+input {
+  display: flex;
+  width: 88%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
