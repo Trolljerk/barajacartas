@@ -1,5 +1,5 @@
 // Cargar datos desde el archivo JSON y guardarlos en localStorage
-fetch("../scripts/data.json")
+fetch("scripts/data.json")
   .then((response) => response.json())
   .then((data) => {
     localStorage.setItem("cartasData", JSON.stringify(data.data));
