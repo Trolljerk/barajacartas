@@ -42,20 +42,22 @@ botones.forEach((button) => {
 });
 
 function renderTable() {
-  datosTabla.innerHTML = "";
-
   const cartasData = JSON.parse(localStorage.getItem("cartasData")) || [];
 
-  // Ordenar de mayor a menor por la cantidad de cartas
+  const fragment = document.createDocumentFragment();
+
   cartasData.sort((a, b) => b.cantidad - a.cantidad);
 
   cartasData.forEach((card) => {
     const row = document.createElement("tr");
     row.innerHTML = `
-    <td>${card.numero}</td>
-    <td>${card.carta}</td>
-    <td>${card.cantidad}</td>
+      <td>${card.numero}</td>
+      <td>${card.carta}</td>
+      <td>${card.cantidad}</td>
     `;
-    datosTabla.appendChild(row);
+    fragment.appendChild(row);
   });
+
+  datosTabla.textContent = "";
+  datosTabla.appendChild(fragment);
 }

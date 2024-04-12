@@ -7,17 +7,9 @@
 body,
 html {
   height: 100%;
-  background: linear-gradient(
-    75deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(200, 200, 200, 1) 100%
-  );
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.contenedor{
+.contenedor {
   display: flex;
   justify-content: center;
 }
@@ -84,6 +76,7 @@ table tr:hover {
 }
 
 .carta:hover {
+  cursor: pointer;
   background-color: #ffdede;
   border: 2px solid hsl(0, 100%, 74%);
 }
@@ -117,4 +110,23 @@ input {
 
 input:hover {
   border: 2px solid hsl(0, 100%, 74%);
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 1px;
+  }
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .contenedor-cartas {
+    width: 100%;
+    display: flexbox;
+    margin: 20px;
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
 }

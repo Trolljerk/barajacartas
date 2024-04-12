@@ -3,126 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Web Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css" />
   </head>
 
   <body>
-    <div id="portada">
-      <img src="img/showdown.jpg" alt="" />
-    </div>
-    <div class="contenedor">
-      <div class="contenedor-cartas">
-        <button carta="1" class="carta">
-          <img src="img/1.png" alt="" />
-        </button>
-        <button carta="2" class="carta">
-          <img src="img/2.png" alt="" />
-        </button>
-        <button carta="3" class="carta">
-          <img src="img/3.png" alt="" />
-        </button>
-        <button carta="4" class="carta">
-          <img src="img/4.png" alt="" />
-        </button>
-        <button carta="5" class="carta">
-          <img src="img/5.png" alt="" />
-        </button>
-        <button carta="6" class="carta">
-          <img src="img/6.png" alt="" />
-        </button>
-        <button carta="7" class="carta">
-          <img src="img/7.png" alt="" />
-        </button>
-        <button carta="8" class="carta">
-          <img src="img/8.png" alt="" />
-        </button>
-        <button carta="9" class="carta">
-          <img src="img/9.png" alt="" />
-        </button>
-        <button carta="10" class="carta">
-          <img src="img/10.png" alt="" />
-        </button>
-        <button carta="11" class="carta">
-          <img src="img/11.png" alt="" />
-        </button>
-        <button carta="12" class="carta">
-          <img src="img/12.png" alt="" />
-        </button>
-        <button carta="13" class="carta">
-          <img src="img/13.png" alt="" />
-        </button>
-      </div>
-      <div class="contenedor-tabla">
-        <div class="contenedor-tabla-datos">
-          <table id="tablaCartas">
-            <thead>
-              <tr>
-                <th class="col1">Número</th>
-                <th>Carta</th>
-                <th>Cantidad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td class="col1">1</td>
-                <td>As de diamantes</td>
-                <td>2</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="contenedor-form">
-          <form id="datosForm">
-            <input
-              type="text"
-              name="numCarta"
-              id=""
-              placeholder="Número de la Carta"
-              required
-            />
-            <input
-              type="text"
-              name="carta"
-              id=""
-              placeholder="Carta"
-              required
-            />
-            <button type="submit">Guardar</button>
-          </form>
-        </div>
+    <div class="container">
+      <div class="login-form">
+        <h1>Iniciar sesión</h1>
+        <form method="POST" onsubmit="return validateForm(this)">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Iniciar sesión" />
+        </form>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="loginScript.js"></script>
   </body>
 </html>
