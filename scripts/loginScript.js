@@ -10,7 +10,6 @@ function validateForm(form) {
   localStorage.setItem("username", username);
   localStorage.setItem("password", password);
 
-  form.action = "cartas/cartas.html";
-  form.submit();
+  window.location.href = "cartas/cartas.html";
   return false;
 }
