@@ -13,28 +13,54 @@
     </div>
     <div class="contenedor">
       <div class="contenedor-cartas">
-        <button class="carta"><img src="img/1.png" alt="" /></button>
-        <button class="carta"><img src="img/2.png" alt="" /></button>
-        <button class="carta"><img src="img/3.png" alt="" /></button>
-        <button class="carta"><img src="img/4.png" alt="" /></button>
-        <button class="carta"><img src="img/5.png" alt="" /></button>
-        <button class="carta"><img src="img/6.png" alt="" /></button>
-        <button class="carta"><img src="img/7.png" alt="" /></button>
-        <button class="carta"><img src="img/8.png" alt="" /></button>
-        <button class="carta"><img src="img/9.png" alt="" /></button>
-        <button class="carta"><img src="img/10.png" alt="" /></button>
-        <button class="carta"><img src="img/11.png" alt="" /></button>
-        <button class="carta"><img src="img/12.png" alt="" /></button>
-        <button class="carta"><img src="img/13.png" alt="" /></button>
+        <button carta="1" class="carta">
+          <img src="img/1.png" alt="" />
+        </button>
+        <button carta="2" class="carta">
+          <img src="img/2.png" alt="" />
+        </button>
+        <button carta="3" class="carta">
+          <img src="img/3.png" alt="" />
+        </button>
+        <button carta="4" class="carta">
+          <img src="img/4.png" alt="" />
+        </button>
+        <button carta="5" class="carta">
+          <img src="img/5.png" alt="" />
+        </button>
+        <button carta="6" class="carta">
+          <img src="img/6.png" alt="" />
+        </button>
+        <button carta="7" class="carta">
+          <img src="img/7.png" alt="" />
+        </button>
+        <button carta="8" class="carta">
+          <img src="img/8.png" alt="" />
+        </button>
+        <button carta="9" class="carta">
+          <img src="img/9.png" alt="" />
+        </button>
+        <button carta="10" class="carta">
+          <img src="img/10.png" alt="" />
+        </button>
+        <button carta="11" class="carta">
+          <img src="img/11.png" alt="" />
+        </button>
+        <button carta="12" class="carta">
+          <img src="img/12.png" alt="" />
+        </button>
+        <button carta="13" class="carta">
+          <img src="img/13.png" alt="" />
+        </button>
       </div>
       <div class="contenedor-tabla">
         <div class="contenedor-tabla-datos">
-          <table>
+          <table id="tablaCartas">
             <thead>
               <tr>
                 <th class="col1">Número</th>
-                <th class="col2">Carta</th>
-                <th class="col3">Cantidad</th>
+                <th>Carta</th>
+                <th>Cantidad</th>
               </tr>
             </thead>
             <tbody>
@@ -77,7 +103,7 @@
           </table>
         </div>
         <div class="contenedor-form">
-          <form action="">
+          <form id="datosForm">
             <input
               type="text"
               name="numCarta"
@@ -97,6 +123,6 @@
         </div>
       </div>
     </div>
-    <script src=""></script>
+    <script src="main.js"></script>
   </body>
 </html>
